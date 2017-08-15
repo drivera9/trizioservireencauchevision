@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MarcarTiemposRombo"
+    style="@style/proyectoWMS_METRO_Theme.Layout.RelativeProcesos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/tituloTipo"/>
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/productosDetalle"
+        android:layout_toEndOf="@+id/tituloTipo"
+        android:layout_below="@+id/tituloTipo"
+        android:layout_alignParentStart="true">
+
+
+    </ListView>
+</RelativeLayout>

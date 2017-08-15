@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="Procesos"
+    style="@style/proyectoWMS_METRO_Theme.Layout.RelativeProcesos"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LayoutRelativeProcesos"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <ListView
+        android:layout_height="match_parent"
+        style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+        android:id="@+id/listView2"/>
+
+
+
+   </LinearLayout>
+</RelativeLayout>

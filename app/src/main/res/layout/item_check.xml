@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="6dip"
+    style="@style/proyectoWMS_METRO_Theme.Layout.RelativeProcesos">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="CheckBox"
+        android:textColor="#000000"
+        android:buttonTint="#000000"
+        android:layout_marginBottom="20dp"/>
+
+    <Spinner
+
+        android:background="@color/METRO_danger"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinnerPrices"
+        android:layout_below="@+id/checkBox1"
+        android:layout_alignParentStart="true">
+
+    </Spinner>
+
+    <EditText
+        android:maxLines="1"
+        android:lines="1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#A0A0A0"
+        android:hint="Cantidad"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/editCant"
+        android:layout_alignBottom="@+id/spinnerPrices"
+        android:layout_toEndOf="@+id/spinnerPrices" />
+
+    <EditText
+        android:maxLines="1"
+        android:lines="1"
+        android:textColorHint="#A0A0A0"
+        android:hint="Valor"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editValor"
+        android:layout_alignBaseline="@+id/editCant"
+        android:layout_alignBottom="@+id/editCant"
+        android:layout_toEndOf="@+id/editCant" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:text="TextView" />
+
+</RelativeLayout>

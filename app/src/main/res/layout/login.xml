@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/proyectoWMS_METRO_Theme.Layout.LinearLogin"
+
+    >
+
+    <ScrollView
+        android:id="@+id/ScrollLogin"
+        style="@style/proyectoWMS_METRO_Theme.ScrollView">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLogin"
+            style="@style/proyectoWMS_METRO_Theme.Layout.LinearLogin">
+
+            <ImageView
+                style="@style/proyectoWMS_METRO_Theme.ImageView.ImageViewOriginal"
+                android:background="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/METRO_info"
+                    android:onClick="texto51"
+                    android:text="51"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/METRO_info"
+                    android:onClick="texto33"
+                    android:text="33"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/METRO_info"
+                    android:onClick="texto10"
+                    android:text="10"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="Usuario" />
+
+            <EditText
+                android:id="@+id/editText"
+                style="@style/proyectoWMS_METRO_Theme.EditText"
+                android:text="juan51" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="Clave" />
+
+            <EditText
+                android:id="@+id/editText2"
+                style="@style/proyectoWMS_METRO_Theme.EditText.EditTextLoginPass"
+                android:text="123" />
+
+            <LinearLayout style="@style/proyectoWMS_METRO_Theme.Layout.LinearLoginBotones">
+
+                <Button
+                    android:id="@+id/button_login"
+                    style="@style/proyectoWMS_METRO_Theme.Button.AceptarLogin"
+                    android:onClick="LoginProcesos"
+                    android:text="Ingresar" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/proyectoWMS_METRO_Theme.Button.CancelarLogin"
+                    android:onClick="cancelar"
+                    android:text="Cancelar" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox_local"
+                style="@style/proyectoWMS_METRO_Theme.CheckBox"
+                android:checked="false"
+                android:text="Local" />
+
+            <CheckBox
+                android:id="@+id/checkBox_remoto"
+                style="@style/proyectoWMS_METRO_Theme.CheckBox"
+                android:checked="true"
+                android:text="Remoto" />
+
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="IP" />
+
+            <EditText
+                android:id="@+id/editText_ip"
+                style="@style/proyectoWMS_METRO_Theme.EditText"
+                android:text="192.190.42.184:8090" />
+
+            <TextView
+                android:id="@+id/textView_BD"
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="Base de datos" />
+
+            <EditText
+                android:id="@+id/editText_BD"
+                style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+            <TextView
+                android:id="@+id/textView_passBD"
+                style="@style/proyectoWMS_METRO_Theme.TextView.Titulo"
+                android:text="Contraseña" />
+
+            <EditText
+                android:id="@+id/editText_passBD"
+                style="@style/proyectoWMS_METRO_Theme.EditText" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
